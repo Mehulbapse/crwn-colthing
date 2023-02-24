@@ -69,13 +69,7 @@ const cartReducer = (state, action) => {
         ...state,
         isCartOpen: payload,
       };
-    // case "SET_CART_OPEN":
-    //   return;
-    // case "SET_CART_COUNT":
-    //   return;
-    // case "SET_CART_TOTAL":
-    //   return;
-
+   
     default:
       throw new Error(`Unhandled type of ${type} in cartReducer`);
   }
