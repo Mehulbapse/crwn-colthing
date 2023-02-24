@@ -5,6 +5,16 @@ export const CategoriesContext = createContext({
   categoriesMap: {},
 });
 
+
+export const CATEGORIES_INTIAL_STATE = {
+  categoriesMap: {},
+};
+
+export const CATEGORIES_ACTION_TYPES = {
+  SET_CATEGORIES_MAP: "category/SET_CATEGORIES_MAP",
+};
+
+
 export const CategoriesProvider = ({ children }) => {
   const [categoriesMap, setCategoriesMap] = useState({});
   useEffect(() => {
